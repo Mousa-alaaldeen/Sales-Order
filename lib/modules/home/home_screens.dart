@@ -3,7 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:login/models/saleso_mdel.dart';
-import 'package:login/screens/login/login_screen.dart';
+import 'package:login/modules/login/login_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   final List<SalesModel> salesList;

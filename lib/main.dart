@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:login/screens/login/login_screen.dart';
+import 'package:login/modules/login/login_screen.dart';
 import 'package:login/shared/network/remote/dio_helper.dart';
 
 void main() async {

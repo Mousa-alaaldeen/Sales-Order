@@ -6,9 +6,9 @@ import 'package:flutter/services.dart';
 import 'package:flutter_toastr/flutter_toastr.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import 'package:login/screens/home/home_screens.dart';
-import 'package:login/screens/login/cubit/cubit.dart';
-import 'package:login/screens/login/cubit/states.dart';
+import 'package:login/modules/home/home_screens.dart';
+import 'package:login/modules/login/cubit/cubit.dart';
+import 'package:login/modules/login/cubit/states.dart';
 import 'package:login/shared/components/custom_text_field.dart';
 
 import 'package:cubit_form/cubit_form.dart';
