@@ -1,3 +1,4 @@
+import 'package:login/models/Login_model.dart';
 import 'package:login/models/saleso_mdel.dart';
 
 
@@ -14,9 +15,8 @@ class LoginSuccessState extends LoginState {
 }
 
 class LoginErrorState extends LoginState {
- 
-   final   List<SalesModel> salesList;
-  LoginErrorState (this.salesList);
+  final LoginModel error;
+  LoginErrorState(this.error);
 }
 
 class LoginPasswordIsVisibilityState extends LoginState {}

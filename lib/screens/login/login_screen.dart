@@ -26,14 +26,14 @@ class LoginScreen extends StatelessWidget {
       create: (BuildContext context) => LoginCubit(),
       child: BlocConsumer<LoginCubit, LoginState>(
         listener: (context, state) {
-          if (state is  LoginSuccessState ) {
+            if (state is LoginSuccessState) {
             Navigator.pushReplacement(
               context,
-              MaterialPageRoute(
-                builder: (context) => HomeScreen(
+              MaterialPageRoute(builder: (context) =>HomeScreen(
                   salesList: state.salesList,
-                ),
-              ),
+                ),),
+
+
             );
 
             FlutterToastr.show(
@@ -44,9 +44,9 @@ class LoginScreen extends StatelessWidget {
               position: FlutterToastr.bottom,
             );
           }
-          if (state is    LoginErrorState) {
+          if (state is LoginErrorState) {
             FlutterToastr.show(
-              'Invalid Branch or Personnel Number. Please try again.',
+              'Invalid Username or Password. Please try again.',
               context,
               backgroundColor: Colors.red,
               duration: FlutterToastr.lengthShort,

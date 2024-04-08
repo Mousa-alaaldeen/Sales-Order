@@ -44,10 +44,7 @@ class LoginCubit extends Cubit<LoginState> {
      
       emit(LoginSuccessState(salesList));
     }).catchError((error) {
-      loginModel = SalesModel.fromJson(error.response.data);
-      print('888888888888888888888');
-      print("error");
-      emit(LoginErrorState(error));
+     
     });
   }
 }
